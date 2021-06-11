@@ -3,8 +3,8 @@ from urllib.request import URLopener
 import pyttsx3
 import pywhatkit
 import instaloader
-import speech_recognition as sr
-import datetime
+import speech_recognition as sr           #this moduoes can be installed using pip install and name of the module for example pip install pyttsx3
+import datetime                           # if u are using mac os use brew cask install name  for example brew cask install pyttsc3
 import ctypes
 import os
 import winshell
@@ -140,76 +140,12 @@ def TaskExecution():
             hour = int(takecommand())
             speak("Time in minutes")
             min = int(takecommand())
-            pywhatkit.sendwhatmsg("+91 8452907114", msg, hour, min, 20)
+            pywhatkit.sendwhatmsg("+91 xxxxxxxxxxxx", msg, hour, min, 20) #numer of the person
             speak("Sir,The message has been delivered succesfully to Mohit")
 
 
-        elif 'Prem' in name:
-            speak("What should i say to Prem")
-            msg = takecommand()
-            speak("Tell me the time")
-            speak("time in hours")
-            hour = int(takecommand())
-            speak("Time in minutes")
-            min = int(takecommand())
-            pywhatkit.sendwhatmsg("+91 8928503290", msg, hour, min, 20)
-            speak("The message has been deliver succesfully to Prem")
-
-        elif 'head boy' in name:
-            speak("What should I say to Head boy")
-            msg = takecommand()
-            speak("Tell me the time sir")
-            speak("time in hours")
-            hour = int(takecommand())
-            speak("Time in minutes")
-            min = int(takecommand())
-            pywhatkit.sendwhatmsg("+91 8693870118", msg, hour, min, 20)
-            speak("Sir,The message has been delivered sucessfully to Head boy")
-
-        elif 'Shameem' in name:
-            speak("What should i say to Shammem")
-            msg = takecommand()
-            speak("Tell me the time sir")
-            speak("time in hours")
-            hour = int(takecommand())
-            speak("Time in minutes")
-            min = int(takecommand())
-            pywhatkit.sendwhatmsg("+91 9820133595", msg, hour, min, 20)
-            speak("Sir,The message has been delivered sucessfully to Shameem")
-
-        elif 'mit' in name:
-            speak("What should i say to mit")
-            msg = takecommand()
-            speak("Tell me the time sir")
-            speak("time in hours")
-            hour = int(takecommand())
-            speak("Time in minutes")
-            min = int(takecommand())
-            pywhatkit.sendwhatmsg("+91 7045225202", msg, hour, min, 20)
-            speak("Sir,The message has been delivered sucessfully to MIT")
-
-        elif 'MIT' in name:
-            speak("What should i say to MIT")
-            msg = takecommand()
-            speak("Tell me the time sir")
-            speak("time in hours")
-            hour = int(takecommand())
-            speak("Time in minutes")
-            min = int(takecommand())
-            pywhatkit.sendwhatmsg("+91 7045225202", msg, hour, min, 20)
-            speak("Sir,The message has been delivered sucessfully to Mit")
-
-        elif 'Harsh' in name:
-            speak("TWhat should i say to Harsh")
-            msg = takecommand()
-            speak("Tell me the time sir")
-            speak("time in hours")
-            hour = int(takecommand())
-            speak("Time in minutes")
-            min = int(takecommand())
-            pywhatkit.sendwhatmsg("+91 8097132196", msg, hour, min, 20)
-            speak("Sir,The message has been delivered sucessfully to Harsh")
-
+       
+     
     def GoogleMaps(Place):
 
         Url_Place = "https://www.google.com/maps/place/" + str(Place)
@@ -290,7 +226,7 @@ def TaskExecution():
         server = smtplib.SMTP('smtp.gmail.com')
         server.ehlo()
         server.starttls()
-        server.login('ibrahimsh1910@gmail.com', 'ibrahimshaikh2020')
+        server.login('wnter your email add', 'your pass')
         server.sendmail('ibrahimsh1910@gmail.com', to, content)
         server.close()
 
